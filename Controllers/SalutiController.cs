@@ -28,6 +28,7 @@ namespace Controllers
         [HttpGet("{Nome}/{version}")]
         public ActionResult<InfoMsg>getSaluti3(string Nome, string version)
         {
+            //test
             return Ok(new InfoMsg(DateTime.Today, $"Saluti {Nome}, sono la versione {version} della web api aggiornata con GitHub"));
         }
     }
