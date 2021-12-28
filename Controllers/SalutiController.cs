@@ -33,7 +33,7 @@ namespace Controllers
         }
 
         [ProducesResponseType(StatusCodes.Status200OK)]
-        [HttpGet("{Nome}/{version}")]
+        [HttpGet("{Nome}/{version}/{message}")]
         public ActionResult<InfoMsg> getSaluti4(string Nome, string version, string message)
         {
             //test
