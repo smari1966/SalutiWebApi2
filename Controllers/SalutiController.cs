@@ -31,5 +31,13 @@ namespace Controllers
             //test
             return Ok(new InfoMsg(DateTime.Today, $"Saluti {Nome}, sono la versione {version} della web api aggiornata con GitHub"));
         }
+
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [HttpGet("{Nome}/{version}")]
+        public ActionResult<InfoMsg> getSaluti4(string Nome, string version, string message)
+        {
+            //test
+            return Ok(new InfoMsg(DateTime.Today, $"Saluti {Nome}, sono la versione {version} della web api aggiornata con GitHub da {message}"));
+        }
     }
 }
